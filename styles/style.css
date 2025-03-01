@@ -1,10 +1,10 @@
 /* Modern Style Sheet with Dark Mode Support */
 :root {
     /* Light mode variables */
-    --primary-color: #3498db;
-    --secondary-color: #2c3e50;
+    --primary-color: #1a2d42;
+    --secondary-color: #2e4156;
     --accent-color: #e74c3c;
-    --light-bg: #f8f9fa;
+    --light-bg: #d4d8dd;
     --dark-text: #333333;
     --light-text: #ffffff;
     --card-bg: #ffffff;
@@ -14,18 +14,18 @@
     --skill-bg: #f1f1f1;
   }
   
-  /* Dark mode variables */
-  [data-theme="dark"] {
-    --primary-color: #4fa3e0;
-    --secondary-color: #1a2530;
-    --accent-color: #e74c3c;
-    --light-bg: #1a1a1a;
-    --dark-text: #f0f0f0;
-    --light-text: #ffffff;
-    --card-bg: #2a2a2a;
-    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    --skill-bg: #333333;
-  }
+/* Dark mode variables */
+[data-theme="dark"] {
+  --primary-color: #3b82f6; /* Daha canlı bir mavi tonu */
+  --secondary-color: #121a24; /* Daha koyu bir arka plan */
+  --accent-color: #f87171; /* Daha yumuşak ama belirgin bir kırmızı */
+  --light-bg: #181818; /* Hafifçe koyulaştırılmış arka plan */
+  --dark-text: #e5e7eb; /* Daha yumuşak beyaz metin */
+  --light-text: #ffffff;
+  --card-bg: #242424; /* Hafifçe koyulaştırılmış kart arka planı */
+  --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Daha koyu bir gölge */
+  --skill-bg: #2d2d2d; /* Hafifçe koyulaştırılmış arka plan rengi */
+}
   
   * {
     margin: 0;
