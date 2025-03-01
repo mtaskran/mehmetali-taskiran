@@ -3,30 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hakkımda</title>
+    <title>Mehmet Ali Taşkıran - Hakkımda</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <header>
         <h1>Hakkımda</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Ana Sayfa</a></li>
-                <li><a href="about.html">Hakkımda</a></li>
-                <li><a href="projects.html">Projeler</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">İletişim</a></li>
-            </ul>
-        </nav>
     </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html"><i class="fas fa-home"></i> Ana Sayfa</a></li>
+            <li><a href="about.html" class="active"><i class="fas fa-user"></i> Hakkımda</a></li>
+            <li><a href="projects.html"><i class="fas fa-code"></i> Projeler</a></li>
+            <li><a href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+            <li><a href="contact.html"><i class="fas fa-envelope"></i> İletişim</a></li>
+        </ul>
+    </nav>
 
-    <section>
-        <h2>Ben Kimim?</h2>
-        <p>Merhaba, ben [Mehmet Ali Taşkıran]. [Kısa bir özgeçmiş bilgisi]. Yazılım geliştirme ve teknolojiye tutkuluyum.</p>
-    </section>
+    <main>
+        <section>
+            <h2>Ben Kimim?</h2>
+            <div style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: center;">
+                <div style="flex: 1; min-width: 300px;">
+                    <p style="margin-bottom: 1rem;">Merhaba, ben Mehmet Ali Taşkıran. Yazılım geliştirme ve teknolojiye tutkuluyum.</p>
+                    <p style="margin-bottom: 1rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras porttitor metus in metus convallis, ac tempor ligula feugiat.</p>
+                    <p>Praesent vitae augue eu orci feugiat tempus. Integer a nisl ac arcu fermentum sollicitudin ut quis nibh. Nullam ultricies risus nec magna molestie feugiat.</p>
+                </div>
+                <div style="flex: 1; min-width: 300px; display: flex; justify-content: center;">
+                    <div style="width: 250px; height: 250px; border-radius: 50%; background-color: #eee; display: flex; justify-content: center; align-items: center;">
+                        <i class="fas fa-user" style="font-size: 5rem; color: #ccc;"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Eğitim</h2>
+            <div style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid #eee;">
+                <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">Bilgisayar Mühendisliği</h3>
+                <p style="font-weight: 500;">Üniversite Adı | 2015 - 2019</p>
+                <p style="margin-top: 0.5rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+            </div>
+            <div>
+                <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">Lise</h3>
+                <p style="font-weight: 500;">Lise Adı | 2011 - 2015</p>
+                <p style="margin-top: 0.5rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Deneyim</h2>
+            <div style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid #eee;">
+                <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">Yazılım Geliştirici</h3>
+                <p style="font-weight: 500;">Şirket Adı | 2022 - Günümüz</p>
+                <p style="margin-top: 0.5rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+            </div>
+            <div>
+                <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">Front-End Geliştirici</h3>
+                <p style="font-weight: 500;">Şirket Adı | 2019 - 2022</p>
+                <p style="margin-top: 0.5rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2023 [Adın]. Tüm hakları saklıdır.</p>
+        <p>&copy; 2023 Mehmet Ali Taşkıran. Tüm hakları saklıdır.</p>
+        <div style="margin-top: 1rem;">
+            <a href="#" style="color: white; margin: 0 0.5rem;"><i class="fab fa-github"></i></a>
+            <a href="#" style="color: white; margin: 0 0.5rem;"><i class="fab fa-linkedin"></i></a>
+            <a href="#" style="color: white; margin: 0 0.5rem;"><i class="fab fa-twitter"></i></a>
+        </div>
     </footer>
 </body>
 </html>

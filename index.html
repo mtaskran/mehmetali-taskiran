@@ -3,30 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kendim - Ana Sayfa</title>
+    <title>Mehmet Ali Taşkıran - Ana Sayfa</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <header>
-        <h1>Merhaba, Ben [Mehmet Ali Taşkıran]</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Ana Sayfa</a></li>
-                <li><a href="about.html">Hakkımda</a></li>
-                <li><a href="projects.html">Projeler</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">İletişim</a></li>
-            </ul>
-        </nav>
+        <h1>Mehmet Ali Taşkıran</h1>
     </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active"><i class="fas fa-home"></i> Ana Sayfa</a></li>
+            <li><a href="about.html"><i class="fas fa-user"></i> Hakkımda</a></li>
+            <li><a href="projects.html"><i class="fas fa-code"></i> Projeler</a></li>
+            <li><a href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+            <li><a href="contact.html"><i class="fas fa-envelope"></i> İletişim</a></li>
+        </ul>
+    </nav>
 
-    <section>
-        <h2>Hoş Geldiniz!</h2>
-        <p>Bu benim kişisel web sitem. Yazılım projelerimi ve deneyimlerimi burada paylaşıyorum.</p>
-    </section>
+    <main>
+        <section>
+            <h2>Hoş Geldiniz!</h2>
+            <p>Bu benim kişisel web sitem. Yazılım projelerimi ve deneyimlerimi burada paylaşıyorum.</p>
+            <div class="hero-buttons" style="margin-top: 2rem; display: flex; gap: 1rem;">
+                <a href="projects.html" style="background-color: var(--primary-color); color: white; padding: 0.8rem 1.5rem; border-radius: var(--border-radius); font-weight: 600;">Projelerimi Görüntüle</a>
+                <a href="contact.html" style="background-color: var(--accent-color); color: white; padding: 0.8rem 1.5rem; border-radius: var(--border-radius); font-weight: 600;">İletişime Geç</a>
+            </div>
+        </section>
+
+        <section>
+            <h2>Yeteneklerim</h2>
+            <div style="display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1rem;">
+                <span style="background-color: #f1f1f1; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem;">HTML/CSS</span>
+                <span style="background-color: #f1f1f1; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem;">JavaScript</span>
+                <span style="background-color: #f1f1f1; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem;">Python</span>
+                <span style="background-color: #f1f1f1; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem;">React</span>
+                <span style="background-color: #f1f1f1; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem;">Node.js</span>
+            </div>
+        </section>
+
+        <section>
+            <h2>Son Projelerim</h2>
+            <div class="project-container">
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-code" style="font-size: 3rem; color: #ccc;"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Proje 1</h3>
+                        <p>Proje açıklaması buraya gelecek. Kullanılan teknolojiler ve projenin amacı.</p>
+                        <div class="project-links">
+                            <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="#"><i class="fas fa-external-link-alt"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-laptop-code" style="font-size: 3rem; color: #ccc;"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Proje 2</h3>
+                        <p>Proje açıklaması buraya gelecek. Kullanılan teknolojiler ve projenin amacı.</p>
+                        <div class="project-links">
+                            <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="#"><i class="fas fa-external-link-alt"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2023 [Mehmet Ali Taşkıran]. Tüm hakları saklıdır.</p>
+        <p>&copy; 2023 Mehmet Ali Taşkıran. Tüm hakları saklıdır.</p>
+        <div style="margin-top: 1rem;">
+            <a href="#" style="color: white; margin: 0 0.5rem;"><i class="fab fa-github"></i></a>
+            <a href="#" style="color: white; margin: 0 0.5rem;"><i class="fab fa-linkedin"></i></a>
+            <a href="#" style="color: white; margin: 0 0.5rem;"><i class="fab fa-twitter"></i></a>
+        </div>
     </footer>
 </body>
 </html>
