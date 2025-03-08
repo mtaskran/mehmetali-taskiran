@@ -6,10 +6,11 @@
     <title>Mehmet Ali Taşkıran - Projeler</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="scripts/darkmode.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>Projelerim</h1>
         <div class="theme-switch-wrapper">
             <label class="theme-switch" for="theme-toggle">
                 <input type="checkbox" id="theme-toggle" />
@@ -34,22 +35,27 @@
     </nav>
 
     <main>
+        <section class="hero-section">
+            <h1>Projelerim</h1>
+            <p class="subtitle">Geliştirdiğim projeler ve çalışmalarım</p>
+        </section>
+
         <section>
-            <h2>Projelerim</h2>
-            <p style="margin-bottom: 2rem;">Geliştirdiğim projeler hakkında daha fazla bilgi edinebilirsiniz.</p>
+            <h2>Tüm Projeler</h2>
+            <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem;">Geliştirdiğim projeler hakkında daha fazla bilgi edinebilirsiniz.</p>
             
             <div class="project-container">
                 <div class="project-card">
                     <div class="project-image">
-                        <i class="fas fa-code" style="font-size: 3rem; color: #ccc;"></i>
+                        <i class="fas fa-code"></i>
                     </div>
                     <div class="project-content">
-                        <h3>Proje 1</h3>
-                        <p>Proje açıklaması buraya gelecek. Kullanılan teknolojiler ve projenin amacı.</p>
+                        <h3>E-Ticaret Platformu</h3>
+                        <p>Modern bir e-ticaret platformu. React ve Node.js kullanılarak geliştirildi.</p>
                         <div style="margin-top: 1rem;">
-                            <span style="background-color: #f1f1f1; padding: 0.3rem 0.6rem; border-radius: 20px; font-size: 0.8rem; margin-right: 0.5rem;">JavaScript</span>
-                            <span style="background-color: #f1f1f1; padding: 0.3rem 0.6rem; border-radius: 20px; font-size: 0.8rem; margin-right: 0.5rem;">React</span>
-                            <span style="background-color: #f1f1f1; padding: 0.3rem 0.6rem; border-radius: 20px; font-size: 0.8rem;">Node.js</span>
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">MongoDB</span>
                         </div>
                         <div class="project-links">
                             <a href="#"><i class="fab fa-github"></i> GitHub</a>
@@ -60,15 +66,15 @@
                 
                 <div class="project-card">
                     <div class="project-image">
-                        <i class="fas fa-laptop-code" style="font-size: 3rem; color: #ccc;"></i>
+                        <i class="fas fa-mobile-alt"></i>
                     </div>
                     <div class="project-content">
-                        <h3>Proje 2</h3>
-                        <p>Proje açıklaması buraya gelecek. Kullanılan teknolojiler ve projenin amacı.</p>
+                        <h3>Fitness Takip Uygulaması</h3>
+                        <p>Kişisel fitness hedeflerini takip etmek için mobil uygulama.</p>
                         <div style="margin-top: 1rem;">
-                            <span style="background-color: #f1f1f1; padding: 0.3rem 0.6rem; border-radius: 20px; font-size: 0.8rem; margin-right: 0.5rem;">Python</span>
-                            <span style="background-color: #f1f1f1; padding: 0.3rem 0.6rem; border-radius: 20px; font-size: 0.8rem; margin-right: 0.5rem;">Django</span>
-                            <span style="background-color: #f1f1f1; padding: 0.3rem 0.6rem; border-radius: 20px; font-size: 0.8rem;">PostgreSQL</span>
+                            <span class="skill-tag">React Native</span>
+                            <span class="skill-tag">Firebase</span>
+                            <span class="skill-tag">Redux</span>
                         </div>
                         <div class="project-links">
                             <a href="#"><i class="fab fa-github"></i> GitHub</a>
@@ -79,15 +85,15 @@
                 
                 <div class="project-card">
                     <div class="project-image">
-                        <i class="fas fa-mobile-alt" style="font-size: 3rem; color: #ccc;"></i>
+                        <i class="fas fa-tasks"></i>
                     </div>
                     <div class="project-content">
-                        <h3>Proje 3</h3>
-                        <p>Proje açıklaması buraya gelecek. Kullanılan teknolojiler ve projenin amacı.</p>
+                        <h3>Proje Yönetim Sistemi</h3>
+                        <p>Ekip ve proje yönetimi için geliştirilmiş web uygulaması.</p>
                         <div style="margin-top: 1rem;">
-                            <span style="background-color: #f1f1f1; padding: 0.3rem 0.6rem; border-radius: 20px; font-size: 0.8rem; margin-right: 0.5rem;">React Native</span>
-                            <span style="background-color: #f1f1f1; padding: 0.3rem 0.6rem; border-radius: 20px; font-size: 0.8rem; margin-right: 0.5rem;">Firebase</span>
-                            <span style="background-color: #f1f1f1; padding: 0.3rem 0.6rem; border-radius: 20px; font-size: 0.8rem;">Redux</span>
+                            <span class="skill-tag">Vue.js</span>
+                            <span class="skill-tag">Laravel</span>
+                            <span class="skill-tag">MySQL</span>
                         </div>
                         <div class="project-links">
                             <a href="#"><i class="fab fa-github"></i> GitHub</a>
@@ -98,15 +104,15 @@
                 
                 <div class="project-card">
                     <div class="project-image">
-                        <i class="fas fa-database" style="font-size: 3rem; color: #ccc;"></i>
+                        <i class="fas fa-robot"></i>
                     </div>
                     <div class="project-content">
-                        <h3>Proje 4</h3>
-                        <p>Proje açıklaması buraya gelecek. Kullanılan teknolojiler ve projenin amacı.</p>
+                        <h3>AI Chatbot</h3>
+                        <p>Yapay zeka destekli müşteri hizmetleri chatbot uygulaması.</p>
                         <div style="margin-top: 1rem;">
-                            <span style="background-color: #f1f1f1; padding: 0.3rem 0.6rem; border-radius: 20px; font-size: 0.8rem; margin-right: 0.5rem;">Java</span>
-                            <span style="background-color: #f1f1f1; padding: 0.3rem 0.6rem; border-radius: 20px; font-size: 0.8rem; margin-right: 0.5rem;">Spring Boot</span>
-                            <span style="background-color: #f1f1f1; padding: 0.3rem 0.6rem; border-radius: 20px; font-size: 0.8rem;">MySQL</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">TensorFlow</span>
+                            <span class="skill-tag">FastAPI</span>
                         </div>
                         <div class="project-links">
                             <a href="#"><i class="fab fa-github"></i> GitHub</a>
@@ -120,12 +126,11 @@
 
     <footer>
         <p>&copy; 2023 Mehmet Ali Taşkıran. Tüm hakları saklıdır.</p>
-        <div style="margin-top: 1rem;">
-            <a href="#" style="color: white; margin: 0 0.5rem;"><i class="fab fa-github"></i></a>
-            <a href="#" style="color: white; margin: 0 0.5rem;"><i class="fab fa-linkedin"></i></a>
-            <a href="#" style="color: white; margin: 0 0.5rem;"><i class="fab fa-twitter"></i></a>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-github"></i> GitHub</a>
+            <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
         </div>
     </footer>
-    <script src="scripts/darkmode.js" defer></script>
 </body>
 </html>

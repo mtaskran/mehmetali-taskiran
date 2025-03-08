@@ -6,10 +6,11 @@
     <title>Mehmet Ali Taşkıran - Hakkımda</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="scripts/darkmode.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>Hakkımda</h1>
         <div class="theme-switch-wrapper">
             <label class="theme-switch" for="theme-toggle">
                 <input type="checkbox" id="theme-toggle" />
@@ -34,17 +35,22 @@
     </nav>
 
     <main>
+        <section class="hero-section">
+            <h1>Hakkımda</h1>
+            <p class="subtitle">Kendimi ve deneyimlerimi keşfedin</p>
+        </section>
+
         <section>
             <h2>Ben Kimim?</h2>
             <div style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: center;">
                 <div style="flex: 1; min-width: 300px;">
-                    <p style="margin-bottom: 1rem;">Merhaba, ben Mehmet Ali Taşkıran. Yazılım geliştirme ve teknolojiye tutkuluyum.</p>
-                    <p style="margin-bottom: 1rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras porttitor metus in metus convallis, ac tempor ligula feugiat.</p>
-                    <p>Praesent vitae augue eu orci feugiat tempus. Integer a nisl ac arcu fermentum sollicitudin ut quis nibh. Nullam ultricies risus nec magna molestie feugiat.</p>
+                    <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1rem;">Merhaba, ben Mehmet Ali Taşkıran. Yazılım geliştirme ve teknolojiye tutkuluyum.</p>
+                    <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras porttitor metus in metus convallis, ac tempor ligula feugiat.</p>
+                    <p style="font-size: 1.1rem; line-height: 1.8;">Praesent vitae augue eu orci feugiat tempus. Integer a nisl ac arcu fermentum sollicitudin ut quis nibh. Nullam ultricies risus nec magna molestie feugiat.</p>
                 </div>
                 <div style="flex: 1; min-width: 300px; display: flex; justify-content: center;">
-                    <div style="width: 250px; height: 250px; border-radius: 50%; background-color: #eee; display: flex; justify-content: center; align-items: center;">
-                        <i class="fas fa-user" style="font-size: 5rem; color: #ccc;"></i>
+                    <div style="width: 250px; height: 250px; border-radius: 50%; background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end)); display: flex; justify-content: center; align-items: center; box-shadow: var(--box-shadow);">
+                        <i class="fas fa-user" style="font-size: 5rem; color: var(--light-text);"></i>
                     </div>
                 </div>
             </div>
@@ -52,41 +58,44 @@
 
         <section>
             <h2>Eğitim</h2>
-            <div style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid #eee;">
-                <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">Bilgisayar Mühendisliği</h3>
-                <p style="font-weight: 500;">Üniversite Adı | 2015 - 2019</p>
-                <p style="margin-top: 0.5rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
-            </div>
-            <div>
-                <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">Lise</h3>
-                <p style="font-weight: 500;">Lise Adı | 2011 - 2015</p>
-                <p style="margin-top: 0.5rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+            <div style="display: grid; gap: 2rem;">
+                <div class="education-card" style="padding: 1.5rem; border-radius: var(--border-radius); background: var(--card-bg); box-shadow: var(--box-shadow); border: 1px solid rgba(255, 255, 255, 0.05); transition: var(--transition);">
+                    <h3 style="color: var(--primary-color); margin-bottom: 0.5rem; font-size: 1.25rem;">Bilgisayar Mühendisliği</h3>
+                    <p style="font-weight: 500; color: var(--accent-color);">Üniversite Adı | 2015 - 2019</p>
+                    <p style="margin-top: 1rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+                </div>
+                <div class="education-card" style="padding: 1.5rem; border-radius: var(--border-radius); background: var(--card-bg); box-shadow: var(--box-shadow); border: 1px solid rgba(255, 255, 255, 0.05); transition: var(--transition);">
+                    <h3 style="color: var(--primary-color); margin-bottom: 0.5rem; font-size: 1.25rem;">Lise</h3>
+                    <p style="font-weight: 500; color: var(--accent-color);">Lise Adı | 2011 - 2015</p>
+                    <p style="margin-top: 1rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+                </div>
             </div>
         </section>
 
         <section>
             <h2>Deneyim</h2>
-            <div style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid #eee;">
-                <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">Yazılım Geliştirici</h3>
-                <p style="font-weight: 500;">Şirket Adı | 2022 - Günümüz</p>
-                <p style="margin-top: 0.5rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
-            </div>
-            <div>
-                <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">Front-End Geliştirici</h3>
-                <p style="font-weight: 500;">Şirket Adı | 2019 - 2022</p>
-                <p style="margin-top: 0.5rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+            <div style="display: grid; gap: 2rem;">
+                <div class="experience-card" style="padding: 1.5rem; border-radius: var(--border-radius); background: var(--card-bg); box-shadow: var(--box-shadow); border: 1px solid rgba(255, 255, 255, 0.05); transition: var(--transition);">
+                    <h3 style="color: var(--primary-color); margin-bottom: 0.5rem; font-size: 1.25rem;">Yazılım Geliştirici</h3>
+                    <p style="font-weight: 500; color: var(--accent-color);">Şirket Adı | 2022 - Günümüz</p>
+                    <p style="margin-top: 1rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+                </div>
+                <div class="experience-card" style="padding: 1.5rem; border-radius: var(--border-radius); background: var(--card-bg); box-shadow: var(--box-shadow); border: 1px solid rgba(255, 255, 255, 0.05); transition: var(--transition);">
+                    <h3 style="color: var(--primary-color); margin-bottom: 0.5rem; font-size: 1.25rem;">Front-End Geliştirici</h3>
+                    <p style="font-weight: 500; color: var(--accent-color);">Şirket Adı | 2019 - 2022</p>
+                    <p style="margin-top: 1rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
         <p>&copy; 2023 Mehmet Ali Taşkıran. Tüm hakları saklıdır.</p>
-        <div style="margin-top: 1rem;">
-            <a href="#" style="color: white; margin: 0 0.5rem;"><i class="fab fa-github"></i></a>
-            <a href="#" style="color: white; margin: 0 0.5rem;"><i class="fab fa-linkedin"></i></a>
-            <a href="#" style="color: white; margin: 0 0.5rem;"><i class="fab fa-twitter"></i></a>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-github"></i> GitHub</a>
+            <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
         </div>
     </footer>
-    <script src="scripts/darkmode.js" defer></script>
 </body>
 </html>
