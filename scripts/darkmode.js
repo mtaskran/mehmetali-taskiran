@@ -30,6 +30,16 @@ function toggleDarkMode() {
     }
   }
   
+  // Function to handle header scroll effect
+  function handleScroll() {
+    const header = document.querySelector('header');
+    if (window.scrollY > 50) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  }
+  
   // Initialize theme when DOM is loaded
   document.addEventListener('DOMContentLoaded', () => {
     // Add event listener to the toggle
@@ -38,4 +48,7 @@ function toggleDarkMode() {
     
     // Set initial theme
     setInitialTheme();
+    
+    // Add scroll event listener
+    window.addEventListener('scroll', handleScroll);
   });
