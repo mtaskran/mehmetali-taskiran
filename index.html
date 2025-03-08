@@ -6,11 +6,13 @@
     <title>Mehmet Ali Taşkıran - Ana Sayfa</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="scripts/darkmode.js" defer></script>
 </head>
 <body>
     <header>
         <h1>Mehmet Ali Taşkıran</h1>
+        <p style="font-size: 1.25rem; margin-top: 1rem; opacity: 0.9;">Full Stack Developer & UI/UX Tasarımcı</p>
         <div class="theme-switch-wrapper">
             <label class="theme-switch" for="theme-toggle">
                 <input type="checkbox" id="theme-toggle" />
@@ -37,21 +39,24 @@
     <main>
         <section>
             <h2>Hoş Geldiniz!</h2>
-            <p>Bu benim kişisel web sitem. Yazılım projelerimi ve deneyimlerimi burada paylaşıyorum.</p>
-            <div class="hero-buttons" style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
-                <a href="projects.html" style="background-color: var(--primary-color); color: white; padding: 0.8rem 1.5rem; border-radius: var(--border-radius); font-weight: 600;">Projelerimi Görüntüle</a>
-                <a href="contact.html" style="background-color: var(--accent-color); color: white; padding: 0.8rem 1.5rem; border-radius: var(--border-radius); font-weight: 600;">İletişime Geç</a>
+            <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem;">Merhaba! Ben Mehmet Ali, yazılım geliştirme ve kullanıcı deneyimi tasarımı konularında tutkulu bir geliştiriciyim. Modern web teknolojileri ve yenilikçi çözümler üretme konusunda uzmanım.</p>
+            <div class="hero-buttons" style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                <a href="projects.html" style="display: inline-flex; align-items: center; gap: 0.5rem; background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end)); color: var(--light-text); padding: 1rem 2rem; border-radius: 9999px; font-weight: 600; transition: var(--transition);"><i class="fas fa-code"></i> Projelerimi Görüntüle</a>
+                <a href="contact.html" style="display: inline-flex; align-items: center; gap: 0.5rem; background: var(--accent-color); color: var(--light-text); padding: 1rem 2rem; border-radius: 9999px; font-weight: 600; transition: var(--transition);"><i class="fas fa-envelope"></i> İletişime Geç</a>
             </div>
         </section>
 
         <section>
             <h2>Yeteneklerim</h2>
-            <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem;">
-                <span class="skill-tag">HTML/CSS</span>
-                <span class="skill-tag">JavaScript</span>
-                <span class="skill-tag">Python</span>
-                <span class="skill-tag">React</span>
-                <span class="skill-tag">Node.js</span>
+            <div style="display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1.5rem;">
+                <span class="skill-tag"><i class="fab fa-html5"></i> HTML5/CSS3</span>
+                <span class="skill-tag"><i class="fab fa-js"></i> JavaScript</span>
+                <span class="skill-tag"><i class="fab fa-python"></i> Python</span>
+                <span class="skill-tag"><i class="fab fa-react"></i> React</span>
+                <span class="skill-tag"><i class="fab fa-node-js"></i> Node.js</span>
+                <span class="skill-tag"><i class="fas fa-database"></i> SQL</span>
+                <span class="skill-tag"><i class="fab fa-git-alt"></i> Git</span>
+                <span class="skill-tag"><i class="fas fa-mobile-alt"></i> Responsive Design</span>
             </div>
         </section>
 
@@ -60,11 +65,16 @@
             <div class="project-container">
                 <div class="project-card">
                     <div class="project-image">
-                        <i class="fas fa-code" style="font-size: 3rem; color: #ccc;"></i>
+                        <i class="fas fa-code"></i>
                     </div>
                     <div class="project-content">
-                        <h3>Proje 1</h3>
-                        <p>Proje açıklaması buraya gelecek. Kullanılan teknolojiler ve projenin amacı.</p>
+                        <h3>E-Ticaret Platformu</h3>
+                        <p>Modern bir e-ticaret platformu. React ve Node.js kullanılarak geliştirildi.</p>
+                        <div style="margin-top: 1rem;">
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">MongoDB</span>
+                        </div>
                         <div class="project-links">
                             <a href="#"><i class="fab fa-github"></i> GitHub</a>
                             <a href="#"><i class="fas fa-external-link-alt"></i> Demo</a>
@@ -74,11 +84,16 @@
                 
                 <div class="project-card">
                     <div class="project-image">
-                        <i class="fas fa-laptop-code" style="font-size: 3rem; color: #ccc;"></i>
+                        <i class="fas fa-mobile-alt"></i>
                     </div>
                     <div class="project-content">
-                        <h3>Proje 2</h3>
-                        <p>Proje açıklaması buraya gelecek. Kullanılan teknolojiler ve projenin amacı.</p>
+                        <h3>Fitness Takip Uygulaması</h3>
+                        <p>Kişisel fitness hedeflerini takip etmek için mobil uygulama.</p>
+                        <div style="margin-top: 1rem;">
+                            <span class="skill-tag">React Native</span>
+                            <span class="skill-tag">Firebase</span>
+                            <span class="skill-tag">Redux</span>
+                        </div>
                         <div class="project-links">
                             <a href="#"><i class="fab fa-github"></i> GitHub</a>
                             <a href="#"><i class="fas fa-external-link-alt"></i> Demo</a>
@@ -91,12 +106,11 @@
 
     <footer>
         <p>&copy; 2023 Mehmet Ali Taşkıran. Tüm hakları saklıdır.</p>
-        <div style="margin-top: 1rem;">
-            <a href="#" style="color: white; margin: 0 0.5rem;"><i class="fab fa-github"></i></a>
-            <a href="#" style="color: white; margin: 0 0.5rem;"><i class="fab fa-linkedin"></i></a>
-            <a href="#" style="color: white; margin: 0 0.5rem;"><i class="fab fa-twitter"></i></a>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-github"></i> GitHub</a>
+            <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
         </div>
     </footer>
-    <script src="scripts/darkmode.js"></script>
 </body>
 </html>
